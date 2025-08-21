@@ -1,9 +1,6 @@
 # Consistency flow matching
 
-[![status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
 [![ci](https://github.com/dirmeier/consistency-flow-matching/actions/workflows/ci.yaml/badge.svg)](https://github.com/dirmeier/consistency-flow-matching/actions/workflows/ci.yaml)
-
-> Flow-matching, consistency-matching, and consistency-flow-matching implementations in Flax
 
 ## About
 
@@ -21,6 +18,13 @@ used in [DDPM++](https://arxiv.org/abs/2011.13456) and the [diffusion transforme
 ## Example usage
 
 The `experiments` folder contains example code that can be used to train one of the generative models on CIFAR10.
+First download and install the repository using:
+
+```bash
+wget -qO- https://github.com/dirmeier/consistency-flow-matching/archive/refs/tags/<TAG>.tar.gz | tar zxvf -
+uv sync --all-groups
+```
+
 Depending on what method you want to use, call:
 
 ```bash
@@ -68,11 +72,6 @@ To install the latest GitHub <RELEASE>, just call the following on the command l
 pip install git+https://github.com/dirmeier/consistency-flow-matching@<RELEASE>
 ```
 
-You can also download the latest <RELEASE> and install using `rye`
-```shell
-rye sync
-```
-
 ## Author
 
-Simon Dirmeier <a href="mailto:sfyrbnd @ pm me">sfyrbnd @ pm me</a>
+Simon Dirmeier <a href="mailto:simd23@pm.me">simd23 @ pm dot me</a>
